@@ -1,0 +1,7 @@
+StackLayout {
+  height: 500;
+  margin-top: 80;
+}
+Button {
+  height: 40;
+}

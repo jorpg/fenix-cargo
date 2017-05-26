@@ -1,0 +1,11 @@
+<ScrollView>
+    <StackLayout #container>
+        <Image src="res://logo_login" stretch="none" horizontalAlignment="center" ></Image>
+        <TextField hint="Correo*" keyboardType="go" [(ngModel)]="user.email"
+        autocorrect="false" autocapitalizationType="none" class="top-textFile"></TextField>
+        <TextField hint="Contraseña*" secure="true" keyboardType="done" [(ngModel)]="user.password"></TextField>
+        <Button [text]="'¿Olvidaste tu contraseña?'" class="forget-button" (tap)="pass()"></Button>
+        <Button [text]="isLoggingIn ? 'Iniciar Sesión' : 'Sign up'" class="submit-button" (tap)="showTabView()"></Button>
+        <!--<Button [text]="isLoggingIn ? 'Sign up' : 'Back to login'" (tap)="toggleDisplay()"></Button>-->
+    </StackLayout>
+</ScrollView>

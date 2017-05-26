@@ -1,0 +1,46 @@
+StackLayout {
+    margin-left: 30;
+    margin-right: 30;
+    padding-bottom: 15;
+    background-color: transparent;
+}
+Image {
+    margin-top: 5;
+    margin-bottom: 20;
+}
+Button, TextField {
+   margin-left: 16;
+    margin-right: 16;
+    margin-bottom: 10;
+    background-color: white;
+    height: 45px;
+    border-radius: 22;
+    color: #333;
+    border: 1px solid;
+    border-color: #0d7abd;
+    text-align: center;
+}
+.submit-button {
+    background-color: #0d7abd;
+    color: white;
+    margin-top: 60;
+    height: 45px;
+    border-radius: 22;
+}
+.top-textFile{
+    margin-top: 30px;
+}
+.forget-button {
+    background-color: transparent;
+    color: #333;
+    margin-top: 5;
+    margin-bottom: 5;
+    border: none;
+    font-size: 16px;
+}
+.light-button {
+    background-color: transparent;
+    color: #c6c18c;
+    border: none;
+    font-size: 18px;
+}
