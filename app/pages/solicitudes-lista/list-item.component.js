@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var page_1 = require("ui/page");
+var ListItemComponent = (function () {
+    function ListItemComponent(router, page) {
+        this.router = router;
+    }
+    ListItemComponent.prototype.detalles = function () {
+        this.router.navigate(["/detalles-item"]);
+    };
+    return ListItemComponent;
+}());
+ListItemComponent = __decorate([
+    core_1.Component({
+        selector: "list-item",
+        template: "\n  <StackLayout orientation=\"horizontal\" (tap)=\"detalles()\" class=\"container\">\n  <Image src=\"res://fenix_logo\" stretch=\"none\" horizontalAlignment=\"center\"></Image>\n  <StackLayout orientation=\"horizontal\">\n  <StackLayout orientation=\"vertical\" class=\"details\">\n  <Label text=\"Estatus:\" editable=\"false\"></Label>\n  <Label text=\"Ancho:\" editable=\"false\"></Label>\n  <Label text=\"largo:\" editable=\"false\"></Label>\n  <Label text=\"Peso:\" editable=\"false\"></Label>\n  <Label text=\"Direcci\u00F3n\" editable=\"false\"></Label>\n  </StackLayout>\n  <StackLayout orientation=\"vertical\" class=\"detail\">\n  <Label text=\"Alto: \" editable=\"false\"></Label>\n  </StackLayout>\n  <StackLayout orientation=\"vertical\">\n  <Label text=\"&#xf2fb;\" class=\"material-icon\"></Label>\n  </StackLayout>\n  </StackLayout>\n  </StackLayout>\n",
+        styles: [" \n    .container {\n       margin: 10;\n       background-color:#ffffff\n}\n.details{\n   margin-top:10;\n   margin-right:20;\n   margin-left:20;\n}\n.detail{\n    margin-top:30;\n    margin-right:20;\n}\n.material-icon{\n    font-family: 'Material-Design-Iconic-Font';\n    font-size: 30;\n    width: 40;\n    color: #757575;\n    margin-left:40;\n}"]
+    }),
+    __metadata("design:paramtypes", [router_1.Router, page_1.Page])
+], ListItemComponent);
+exports.ListItemComponent = ListItemComponent;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGlzdC1pdGVtLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImxpc3QtaXRlbS5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxzQ0FBMEM7QUFDMUMsMENBQXlDO0FBQ3pDLGdDQUErQjtBQStDL0IsSUFBYSxpQkFBaUI7SUFDOUIsMkJBQW9CLE1BQWUsRUFBRSxJQUFTO1FBQTFCLFdBQU0sR0FBTixNQUFNLENBQVM7SUFDaEMsQ0FBQztJQUNKLG9DQUFRLEdBQVI7UUFDRSxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDLGdCQUFnQixDQUFDLENBQUMsQ0FBQTtJQUN6QyxDQUFDO0lBQ0Ysd0JBQUM7QUFBRCxDQUFDLEFBTkQsSUFNQztBQU5ZLGlCQUFpQjtJQTlDN0IsZ0JBQVMsQ0FBQztRQUNYLFFBQVEsRUFBQyxXQUFXO1FBQ3BCLFFBQVEsRUFBQyxzMkJBbUJSO1FBQ0QsTUFBTSxFQUFFLENBQUMsaVdBb0JQLENBQUM7S0FHRixDQUFDO3FDQUUyQixlQUFNLEVBQU8sV0FBSTtHQURqQyxpQkFBaUIsQ0FNN0I7QUFOWSw4Q0FBaUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuaW1wb3J0IHsgUm91dGVyIH0gZnJvbSBcIkBhbmd1bGFyL3JvdXRlclwiO1xuaW1wb3J0IHsgUGFnZSB9IGZyb20gXCJ1aS9wYWdlXCI7XG5AQ29tcG9uZW50KHtcbnNlbGVjdG9yOlwibGlzdC1pdGVtXCIsXG50ZW1wbGF0ZTpgXG4gIDxTdGFja0xheW91dCBvcmllbnRhdGlvbj1cImhvcml6b250YWxcIiAodGFwKT1cImRldGFsbGVzKClcIiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICA8SW1hZ2Ugc3JjPVwicmVzOi8vZmVuaXhfbG9nb1wiIHN0cmV0Y2g9XCJub25lXCIgaG9yaXpvbnRhbEFsaWdubWVudD1cImNlbnRlclwiPjwvSW1hZ2U+XG4gIDxTdGFja0xheW91dCBvcmllbnRhdGlvbj1cImhvcml6b250YWxcIj5cbiAgPFN0YWNrTGF5b3V0IG9yaWVudGF0aW9uPVwidmVydGljYWxcIiBjbGFzcz1cImRldGFpbHNcIj5cbiAgPExhYmVsIHRleHQ9XCJFc3RhdHVzOlwiIGVkaXRhYmxlPVwiZmFsc2VcIj48L0xhYmVsPlxuICA8TGFiZWwgdGV4dD1cIkFuY2hvOlwiIGVkaXRhYmxlPVwiZmFsc2VcIj48L0xhYmVsPlxuICA8TGFiZWwgdGV4dD1cImxhcmdvOlwiIGVkaXRhYmxlPVwiZmFsc2VcIj48L0xhYmVsPlxuICA8TGFiZWwgdGV4dD1cIlBlc286XCIgZWRpdGFibGU9XCJmYWxzZVwiPjwvTGFiZWw+XG4gIDxMYWJlbCB0ZXh0PVwiRGlyZWNjacOzblwiIGVkaXRhYmxlPVwiZmFsc2VcIj48L0xhYmVsPlxuICA8L1N0YWNrTGF5b3V0PlxuICA8U3RhY2tMYXlvdXQgb3JpZW50YXRpb249XCJ2ZXJ0aWNhbFwiIGNsYXNzPVwiZGV0YWlsXCI+XG4gIDxMYWJlbCB0ZXh0PVwiQWx0bzogXCIgZWRpdGFibGU9XCJmYWxzZVwiPjwvTGFiZWw+XG4gIDwvU3RhY2tMYXlvdXQ+XG4gIDxTdGFja0xheW91dCBvcmllbnRhdGlvbj1cInZlcnRpY2FsXCI+XG4gIDxMYWJlbCB0ZXh0PVwiJiN4ZjJmYjtcIiBjbGFzcz1cIm1hdGVyaWFsLWljb25cIj48L0xhYmVsPlxuICA8L1N0YWNrTGF5b3V0PlxuICA8L1N0YWNrTGF5b3V0PlxuICA8L1N0YWNrTGF5b3V0PlxuYCxcbnN0eWxlczogW2AgXG4gICAgLmNvbnRhaW5lciB7XG4gICAgICAgbWFyZ2luOiAxMDtcbiAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmZcbn1cbi5kZXRhaWxze1xuICAgbWFyZ2luLXRvcDoxMDtcbiAgIG1hcmdpbi1yaWdodDoyMDtcbiAgIG1hcmdpbi1sZWZ0OjIwO1xufVxuLmRldGFpbHtcbiAgICBtYXJnaW4tdG9wOjMwO1xuICAgIG1hcmdpbi1yaWdodDoyMDtcbn1cbi5tYXRlcmlhbC1pY29ue1xuICAgIGZvbnQtZmFtaWx5OiAnTWF0ZXJpYWwtRGVzaWduLUljb25pYy1Gb250JztcbiAgICBmb250LXNpemU6IDMwO1xuICAgIHdpZHRoOiA0MDtcbiAgICBjb2xvcjogIzc1NzU3NTtcbiAgICBtYXJnaW4tbGVmdDo0MDtcbn1gXVxuXG5cbn0pXG5leHBvcnQgY2xhc3MgTGlzdEl0ZW1Db21wb25lbnR7XG5jb25zdHJ1Y3Rvcihwcml2YXRlIHJvdXRlciA6IFJvdXRlciAscGFnZTpQYWdlKXtcbiAgIH1cbmRldGFsbGVzKCl7XG4gIHRoaXMucm91dGVyLm5hdmlnYXRlKFtcIi9kZXRhbGxlcy1pdGVtXCJdKVxuIH1cbn0iXX0=

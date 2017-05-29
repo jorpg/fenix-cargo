@@ -1,0 +1,13 @@
+<ScrollView orientation="vertical">
+<StackLayout>
+ <Image src="res://fenix_logo" stretch="none" horizontalAlignment="center"></Image>
+ <TextField hint="Nombre*" autocorrect="false" autocapilatizationType="true" textAlignment="center"></TextField>
+  <TextField hint="Apellido*" autocorrect="false" autocapilatizationType="true" textAlignment="center"></TextField>
+  <TextField hint="Correo*" keyboardType="email" autocorrect="false" autocapilatizationType="none"></TextField>
+  <TextField hint="telefono*" autocorrect="false" textAlignment="center"></TextField>
+  <TextField hint="Contraseña*" secure="true" autocorrect="false" autocapilatizationType="none"></TextField>
+  <TextField hint="Repetir Contraseña*" secure="true" autocorrect="false" autocapilatizationType="none"></TextField>
+ <Button text="Registrarse" (tap)="registrarse()"></Button>
+</StackLayout>
+</ScrollView>
+

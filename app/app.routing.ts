@@ -1,27 +1,32 @@
-import { AuthComponent } from "./pages/auth/auth.component";
 import { LoginComponent } from "./pages/login/login.component";
-import { PassComponent } from "./pages/pass/pass.component";
-import { CodeComponent } from "./pages/code/code.component";
-import { RegisterComponent } from "./pages/register/register.component";
-import { ListComponent } from "./pages/list/list.component";
-import { TabsComponent } from "./pages/tabs/tabs.component";
+import { SolicitudesHolderComponent } from "./pages/solicitudes-holder/solicitudes-holder.component";
+import { InicioSesionComponent} from "./pages/inicioSesion/inicioSesion.component";
+import { RecuperarComponent} from "./pages/recuperar/recuperar.component";
+import { IngresarCodigoComponent} from "./pages/ingresarCodigo/ingresarCodigo.component"
+import { BienvenidaComponent} from "./pages/bienvenida/bienvenida.component";
+import { PerfilComponent} from "./pages/perfil/perfil.component";
+import { RegistrarseComponent} from "./pages/registrarse/registrarse.component"; 
+import { TerminosComponent} from "./pages/terminos/terminos.component";
+import { SolicitudesListaComponent} from "./pages/solicitudes-lista/solicitudes-lista.component";
+import { DetallesItemComponent} from "./pages/detalles-item/detalles-item.component";
 
 export const routes = [
-    { path: "", component: AuthComponent },
-    { path: "login", component: LoginComponent },
-    { path: "pass", component: PassComponent },
-    { path: "code", component: CodeComponent },
-    { path: "register", component: RegisterComponent },
-    { path: "list", component: ListComponent },
-    { path: "tabs", component: TabsComponent }
+    { path: "", component: LoginComponent},
+    { path: "solicitudes-holder",component: SolicitudesHolderComponent },
+    { path: "inicioSesion",component:InicioSesionComponent },
+    { path: "recuperar",component:RecuperarComponent},
+    { path: "ingresarCodigo",component:IngresarCodigoComponent},
+    { path: "bienvenida",component:BienvenidaComponent},
+    { path: "perfil",component:PerfilComponent},
+    { path: "registrarse",component:RegistrarseComponent},
+    { path: "terminos",component:TerminosComponent},
+    { path: "solicitudes-lista",component:SolicitudesListaComponent},
+    { path: "detalles-item",component:DetallesItemComponent}
 ];
 
 export const navigatableComponents = [
-    AuthComponent,
-    LoginComponent,
-    PassComponent,
-    CodeComponent,
-    RegisterComponent,
-    ListComponent,
-    TabsComponent
+    LoginComponent,SolicitudesHolderComponent,InicioSesionComponent,
+    RecuperarComponent,IngresarCodigoComponent,BienvenidaComponent,
+    PerfilComponent,RegistrarseComponent,TerminosComponent,
+    SolicitudesListaComponent,DetallesItemComponent
 ];

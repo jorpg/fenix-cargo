@@ -1,0 +1,29 @@
+StackLayout {
+margin-left: 30;
+margin-right: 30;
+padding-bottom: 15;
+background-color: white;
+}
+Image {
+margin-top: 5;
+margin-bottom: 20;
+}
+TextField{
+margin-left: 16;
+margin-right: 16;
+margin-bottom: 10;
+text-align: center;
+}
+Button{
+    margin-left: 16;
+    margin-right: 16;
+    margin-bottom: 10;
+    background-color: #1976D2;
+    color: white;
+    margin-top:20;
+    border-radius: 50%;
+}
+Label{
+    color: #000066;
+    text-align: center;
+}
