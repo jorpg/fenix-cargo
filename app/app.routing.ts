@@ -9,6 +9,7 @@ import { RegistrarseComponent} from "./pages/registrarse/registrarse.component";
 import { TerminosComponent} from "./pages/terminos/terminos.component";
 import { SolicitudesListaComponent} from "./pages/solicitudes-lista/solicitudes-lista.component";
 import { DetallesItemComponent} from "./pages/detalles-item/detalles-item.component";
+import { AgregarPickUpComponent} from "./pages/agregar-pickup/agregar-pickup.component";
 
 export const routes = [
     { path: "", component: LoginComponent},
@@ -21,12 +22,13 @@ export const routes = [
     { path: "registrarse",component:RegistrarseComponent},
     { path: "terminos",component:TerminosComponent},
     { path: "solicitudes-lista",component:SolicitudesListaComponent},
-    { path: "detalles-item",component:DetallesItemComponent}
+    { path: "detalles-item",component:DetallesItemComponent},
+    { path: "agregar-pickup",component:AgregarPickUpComponent}
 ];
 
 export const navigatableComponents = [
     LoginComponent,SolicitudesHolderComponent,InicioSesionComponent,
     RecuperarComponent,IngresarCodigoComponent,BienvenidaComponent,
     PerfilComponent,RegistrarseComponent,TerminosComponent,
-    SolicitudesListaComponent,DetallesItemComponent
+    SolicitudesListaComponent,DetallesItemComponent,AgregarPickUpComponent
 ];

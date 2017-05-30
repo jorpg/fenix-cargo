@@ -1,0 +1,22 @@
+<ActionBar title="Pickup Nueva">
+    <NavigationButton icon="res://ic_navigate_before" effectiveMarginRight=1></NavigationButton>
+</ActionBar>
+<ScrollView orientation="vertical">
+<StackLayout>
+  <TextField hint="Agregar Imagen" autocorrect="false" autocapilatizationType="true" textAlignment="center"></TextField>
+  <Label text="0 de 3 Puedes subir 3 imagenes" editable="false"></Label>
+<StackLayout orientation="horizontal">  
+  <Label text="tipo de medida:" editable="false"></Label>
+  </StackLayout>
+  <TextField hint="Ancho*" keyboardType="email" autocorrect="false" autocapilatizationType="none"></TextField>
+  <TextField hint="Alto*" autocorrect="false" textAlignment="center"></TextField>
+  <TextField hint="Largo*" secure="true" autocorrect="false" autocapilatizationType="none"></TextField>
+<StackLayout orientation="horizontal">  
+  <Label text="medida de peso"></Label>
+</StackLayout>  
+  <TextField hint="Peso*" autocorrect="false" textAlignment="center"></TextField>
+  <TextField hint="Direccion*" secure="true" autocorrect="false" autocapilatizationType="none" (tap)="displayActionDialog()"></TextField>
+<Button text="Guardar" (tap)="registrarse()"></Button>
+</StackLayout>
+</ScrollView>
+

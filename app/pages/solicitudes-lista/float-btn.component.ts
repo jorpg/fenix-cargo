@@ -30,7 +30,7 @@ export class FloatBtn2Component {
 constructor(private router : Router ,page:Page){
   }
 pickupNueva(){
-  this.router.navigate(["/inicioSesion"])
+  this.router.navigate(["/agregar-pickup"])
  }
 
 }
