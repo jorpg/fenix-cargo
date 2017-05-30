@@ -5,7 +5,7 @@ padding-bottom: 15;
 background-color: white;
 }
 Image {
-margin-top: 5;
+margin-top: 80;
 margin-bottom: 20;
 }
 Button, TextField{
@@ -19,4 +19,9 @@ Button{
     color: white;
     margin-top:20;
     border-radius: 50%
+}
+.top-buttom{
+    margin-top: 70;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }

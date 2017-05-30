@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
-import { Page} from "ui/page"
+import { Page} from "ui/page";
 
 @Component({
   selector: "my-app",
@@ -14,8 +14,8 @@ export class RegistrarseComponent {
     page.actionBarHidden = true;
   }
 
-registrarse(){
-    this.router.navigate(["/terminos"])
-}
-
+  registrarse(){
+      this.router.navigate(["/terminos"])
+  }
+  
 }
