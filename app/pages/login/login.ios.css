@@ -1,7 +1,27 @@
 StackLayout {
-  height: 305;
+  height: 600;
 }
 Button {
   height: 40;
-  
+}
+.top-buttom{
+    margin-top: 150;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+Image {
+margin-top: 80;
+margin-bottom: 100;
+}
+.action-image {
+    width: 40;
+    height: 40;
+    vertical-align: center;
+}
+
+.action-label {
+    color: #3C5AFD;
+    font-size: 24;
+    font-weight: bold;
+    vertical-align: center;
 }

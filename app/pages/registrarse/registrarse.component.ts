@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { Page} from "ui/page";
-
+import dialogs = require("ui/dialogs");
 @Component({
   selector: "my-app",
   templateUrl:"pages/registrarse/registrarse.html",
