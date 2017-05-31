@@ -30,11 +30,18 @@ guardar(){
 }
  public show(){
         this.drawer.showDrawer();
-        Toast.makeText(" menu item tapped").show();
     }
 
      public onMenuTapped(value: any) {
         Toast.makeText(value + " menu item selected").show();
-        this.drawer.closeDrawer();
+        
+    }
+
+    public home(){
+        this.router.navigate(["/solicitudes-lista"])
+    }
+
+    public direcciones(){
+        this.router.navigate(["/direccion"])
     }
 }

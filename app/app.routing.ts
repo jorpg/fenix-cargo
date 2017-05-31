@@ -10,7 +10,8 @@ import { TerminosComponent} from "./pages/terminos/terminos.component";
 import { SolicitudesListaComponent} from "./pages/solicitudes-lista/solicitudes-lista.component";
 import { DetallesItemComponent} from "./pages/detalles-item/detalles-item.component";
 import { AgregarPickUpComponent} from "./pages/agregar-pickup/agregar-pickup.component";
-
+import { DireccionComponent } from "./pages/direccion/direccion.component";
+import { NuevaDireccionComponent} from "./pages/nueva-direccion/nueva-direccion.component"
 export const routes = [
     { path: "", component: LoginComponent},
     { path: "solicitudes-holder",component: SolicitudesHolderComponent },
@@ -23,12 +24,15 @@ export const routes = [
     { path: "terminos",component:TerminosComponent},
     { path: "solicitudes-lista",component:SolicitudesListaComponent},
     { path: "detalles-item",component:DetallesItemComponent},
-    { path: "agregar-pickup",component:AgregarPickUpComponent}
+    { path: "agregar-pickup",component:AgregarPickUpComponent},
+    { path: "direccion",component:DireccionComponent},
+    { path: "nueva-direccion",component:NuevaDireccionComponent}
 ];
 
 export const navigatableComponents = [
     LoginComponent,SolicitudesHolderComponent,InicioSesionComponent,
     RecuperarComponent,IngresarCodigoComponent,BienvenidaComponent,
     PerfilComponent,RegistrarseComponent,TerminosComponent,
-    SolicitudesListaComponent,DetallesItemComponent,AgregarPickUpComponent
+    SolicitudesListaComponent,DetallesItemComponent,AgregarPickUpComponent,
+    DireccionComponent,NuevaDireccionComponent
 ];

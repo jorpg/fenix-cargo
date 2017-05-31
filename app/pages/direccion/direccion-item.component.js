@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var page_1 = require("ui/page");
+var DireccionItemComponent = (function () {
+    function DireccionItemComponent(router, page) {
+        this.router = router;
+    }
+    DireccionItemComponent.prototype.eliminar = function () {
+        this.router.navigate(["/detalles-item"]);
+    };
+    DireccionItemComponent.prototype.editar = function () {
+    };
+    return DireccionItemComponent;
+}());
+DireccionItemComponent = __decorate([
+    core_1.Component({
+        selector: "direccion-list-item",
+        template: "\n  <StackLayout class=\"container\">\n  <Label text=\"Alias:\" editable=\"false\" class=\"field\"></Label>\n  <Label text=\"Lorem ipsum\" editable=\"false\" class=\"data\"></Label>\n  <Label text=\"Direccion:\" editable=\"false\" class=\"field\"></Label>\n  <Label text=\"Lorem ipsum dolor sit amet, consectetur\" editable=\"false\" class=\"data\"></Label>\n  <Label text=\"adipiscing elit. Donec eget elit sapien. Quis\" editable=\"false\" class=\"data\"></Label>\n  <Label text=\"que impediet nec nisl nec scelerisque...\" editable=\"false\" class=\"data\"></Label>\n  <StackLayout orientation=\"horizontal\" class=\"buttonsContainer\">\n  <Label text=\"Eliminar\" (tap)=\"eliminar()\" class =\"eliminar\"></Label>\n  <Label text=\"Editar\" (tap)=\"editar()\" class =\"buttons\"></Label>\n  </StackLayout>\n  </StackLayout>\n",
+        styles: [" \n    .container {\n       margin: 10;\n       padding-left: 10;\n       background-color:#ffffff;\n}\n.field{\n   color: #757575;\n   margin-left:5;\n}\n.data{\n  color:#000000;\n  margin-left:5;\n}\n.buttonsContainer{\n  border-top-width: 1;\n  border-color: #ccc;\n}\n.buttons{\n    background-color:#ffffff;\n    color:#000000;\n    margin-left:40;\n    font-size:20;\n}\n.eliminar{\n  margin-left:110;\n  background-color:#ffffff;\n  color:#000000;\n  font-size:20;\n}"]
+    }),
+    __metadata("design:paramtypes", [router_1.Router, page_1.Page])
+], DireccionItemComponent);
+exports.DireccionItemComponent = DireccionItemComponent;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGlyZWNjaW9uLWl0ZW0uY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiZGlyZWNjaW9uLWl0ZW0uY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsc0NBQTBDO0FBQzFDLDBDQUF5QztBQUN6QyxnQ0FBK0I7QUFrRC9CLElBQWEsc0JBQXNCO0lBQ25DLGdDQUFvQixNQUFlLEVBQUUsSUFBUztRQUExQixXQUFNLEdBQU4sTUFBTSxDQUFTO0lBQ2hDLENBQUM7SUFDSix5Q0FBUSxHQUFSO1FBQ0UsSUFBSSxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDLENBQUE7SUFDekMsQ0FBQztJQUNGLHVDQUFNLEdBQU47SUFFQSxDQUFDO0lBQ0QsNkJBQUM7QUFBRCxDQUFDLEFBVEQsSUFTQztBQVRZLHNCQUFzQjtJQWpEbEMsZ0JBQVMsQ0FBQztRQUNYLFFBQVEsRUFBQyxxQkFBcUI7UUFDOUIsUUFBUSxFQUFDLDh6QkFhUjtRQUNELE1BQU0sRUFBRSxDQUFDLDRkQTZCUCxDQUFDO0tBR0YsQ0FBQztxQ0FFMkIsZUFBTSxFQUFPLFdBQUk7R0FEakMsc0JBQXNCLENBU2xDO0FBVFksd0RBQXNCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IFJvdXRlciB9IGZyb20gXCJAYW5ndWxhci9yb3V0ZXJcIjtcbmltcG9ydCB7IFBhZ2UgfSBmcm9tIFwidWkvcGFnZVwiO1xuQENvbXBvbmVudCh7XG5zZWxlY3RvcjpcImRpcmVjY2lvbi1saXN0LWl0ZW1cIixcbnRlbXBsYXRlOmBcbiAgPFN0YWNrTGF5b3V0IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gIDxMYWJlbCB0ZXh0PVwiQWxpYXM6XCIgZWRpdGFibGU9XCJmYWxzZVwiIGNsYXNzPVwiZmllbGRcIj48L0xhYmVsPlxuICA8TGFiZWwgdGV4dD1cIkxvcmVtIGlwc3VtXCIgZWRpdGFibGU9XCJmYWxzZVwiIGNsYXNzPVwiZGF0YVwiPjwvTGFiZWw+XG4gIDxMYWJlbCB0ZXh0PVwiRGlyZWNjaW9uOlwiIGVkaXRhYmxlPVwiZmFsc2VcIiBjbGFzcz1cImZpZWxkXCI+PC9MYWJlbD5cbiAgPExhYmVsIHRleHQ9XCJMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXJcIiBlZGl0YWJsZT1cImZhbHNlXCIgY2xhc3M9XCJkYXRhXCI+PC9MYWJlbD5cbiAgPExhYmVsIHRleHQ9XCJhZGlwaXNjaW5nIGVsaXQuIERvbmVjIGVnZXQgZWxpdCBzYXBpZW4uIFF1aXNcIiBlZGl0YWJsZT1cImZhbHNlXCIgY2xhc3M9XCJkYXRhXCI+PC9MYWJlbD5cbiAgPExhYmVsIHRleHQ9XCJxdWUgaW1wZWRpZXQgbmVjIG5pc2wgbmVjIHNjZWxlcmlzcXVlLi4uXCIgZWRpdGFibGU9XCJmYWxzZVwiIGNsYXNzPVwiZGF0YVwiPjwvTGFiZWw+XG4gIDxTdGFja0xheW91dCBvcmllbnRhdGlvbj1cImhvcml6b250YWxcIiBjbGFzcz1cImJ1dHRvbnNDb250YWluZXJcIj5cbiAgPExhYmVsIHRleHQ9XCJFbGltaW5hclwiICh0YXApPVwiZWxpbWluYXIoKVwiIGNsYXNzID1cImVsaW1pbmFyXCI+PC9MYWJlbD5cbiAgPExhYmVsIHRleHQ9XCJFZGl0YXJcIiAodGFwKT1cImVkaXRhcigpXCIgY2xhc3MgPVwiYnV0dG9uc1wiPjwvTGFiZWw+XG4gIDwvU3RhY2tMYXlvdXQ+XG4gIDwvU3RhY2tMYXlvdXQ+XG5gLFxuc3R5bGVzOiBbYCBcbiAgICAuY29udGFpbmVyIHtcbiAgICAgICBtYXJnaW46IDEwO1xuICAgICAgIHBhZGRpbmctbGVmdDogMTA7XG4gICAgICAgYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmO1xufVxuLmZpZWxke1xuICAgY29sb3I6ICM3NTc1NzU7XG4gICBtYXJnaW4tbGVmdDo1O1xufVxuLmRhdGF7XG4gIGNvbG9yOiMwMDAwMDA7XG4gIG1hcmdpbi1sZWZ0OjU7XG59XG4uYnV0dG9uc0NvbnRhaW5lcntcbiAgYm9yZGVyLXRvcC13aWR0aDogMTtcbiAgYm9yZGVyLWNvbG9yOiAjY2NjO1xufVxuLmJ1dHRvbnN7XG4gICAgYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmO1xuICAgIGNvbG9yOiMwMDAwMDA7XG4gICAgbWFyZ2luLWxlZnQ6NDA7XG4gICAgZm9udC1zaXplOjIwO1xufVxuLmVsaW1pbmFye1xuICBtYXJnaW4tbGVmdDoxMTA7XG4gIGJhY2tncm91bmQtY29sb3I6I2ZmZmZmZjtcbiAgY29sb3I6IzAwMDAwMDtcbiAgZm9udC1zaXplOjIwO1xufWBdXG5cblxufSlcbmV4cG9ydCBjbGFzcyBEaXJlY2Npb25JdGVtQ29tcG9uZW50e1xuY29uc3RydWN0b3IocHJpdmF0ZSByb3V0ZXIgOiBSb3V0ZXIgLHBhZ2U6UGFnZSl7XG4gICB9XG5lbGltaW5hcigpe1xuICB0aGlzLnJvdXRlci5uYXZpZ2F0ZShbXCIvZGV0YWxsZXMtaXRlbVwiXSlcbiB9XG5lZGl0YXIoKXtcblxufVxufSJdfQ==

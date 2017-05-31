@@ -1,7 +1,21 @@
 <ActionBar title="Fenix">
-    <NavigationButton icon="res://ic_menu" effectiveMarginRight=1></NavigationButton>
+    <NavigationButton icon="res://ic_menu" effectiveMarginRight=1 (tap)="show()"></NavigationButton>
 </ActionBar>
-<StackLayout class="top">
+<RadSideDrawer>
+    <StackLayout tkDrawerContent class="sideStackLayout">
+        <ScrollView>
+            <StackLayout class="sideStackLayout">
+                <Label text="&#xf175; Home" class="sideLabel" (tap)="home()"></Label>
+                <Label text="&#xf206; Perfil" class="sideLabel" (tap)="onMenuTapped('Sent Mail')"></Label>
+                <Label text="&#xf1ab; Direcciones" class="sideLabel" (tap)="direccion()"></Label>
+                <StackLayout>
+                <Label text="&#xf1af; Cerrar Sesión" class="sideStackLayout2" (tap)="direccion()"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+  <StackLayout tkMainContent class="mainContent">
+      <StackLayout class="top">
   <Label text= 'Puedes crear' 
  editable="false" textAlignment="center"></Label>
  <Label text= 'una nueva' 
@@ -10,3 +24,5 @@
  editable="false" textAlignment="center"></Label>
  <Button text="Pickup Nueva" (tap)="solicitudesLista()"></Button>
 </StackLayout>
+    </StackLayout>
+</RadSideDrawer>

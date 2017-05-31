@@ -22,3 +22,39 @@ ActionBar{
     color: white;
     border-radius: 50%;
     }
+
+.sideStackLayout {
+    background-color: #1976D2;
+    color: #FFFFFF;
+    margin-top: 20%;
+    margin-left:15%;
+    margin-right: 0;
+}
+ 
+.sideTitleStackLayout {
+    padding: 16;
+    font-weight: bold;
+    background-color: #333333;
+    margin-top: 0;
+    margin-left:0;
+    margin-right: 0;
+}
+ 
+.sideLabel {
+    padding: 0;
+    font-family: 'Material-Design-Iconic-Font';
+    color: #FFFFFF;
+    font-size: 20;
+    margin-bottom: 15
+}
+ 
+.listItemStackLayout {
+    padding: 16;
+    background-color: #FFFFFF;
+}
+.sideStackLayout2{
+  margin-top:290;
+  font-family: 'Material-Design-Iconic-Font';
+  color: #FFFFFF;
+  font-size: 20;
+}

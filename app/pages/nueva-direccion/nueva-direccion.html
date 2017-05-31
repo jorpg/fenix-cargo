@@ -1,0 +1,15 @@
+<ActionBar title="Nueva Direccion">
+    <NavigationButton icon="res://ic_navigate_before" effectiveMarginRight=1></NavigationButton>
+</ActionBar>
+<ScrollView orientation="vertical">
+<StackLayout>
+ <TextField hint="Alias*" autocorrect="false" autocapilatizationType="none" textAlignment="center"></TextField>
+ <TextField hint="Ciudad*" autocorrect="false" autocapilatizationType="true"></TextField>
+ <TextField hint="Calle*" autocorrect="false" textAlignment="center"></TextField>
+ <TextField hint="Carrera*"  autocorrect="false" autocapilatizationType="none"></TextField>
+ <TextField hint="Diagonal*" autocorrect="false" textAlignment="center"></TextField>
+ <TextField hint="Transversal*"autocorrect="false" autocapilatizationType="none" (tap)="displayActionDialog()"></TextField>
+<Button text="Guardar" (tap)="direccion()"></Button>
+</StackLayout>
+</ScrollView>
+
