@@ -37,6 +37,13 @@ Button {
     height: 100%;
 }
 ActionBar{
+
   background-color: #1976D2;
   color: #ffffff;
-  }    
+  } 
+.navButton{
+ background-color: #1976D2;
+ color: #ffffff;
+ font-family: 'Material-Design-Iconic-Font';
+ 
+  }

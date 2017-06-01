@@ -12,7 +12,7 @@ export class InicioSesionComponent {
   
   isLogginIn= true;
   constructor(private router : Router,page:Page){
-    page.actionBarHidden = false;
+    page.actionBarHidden = true;
   }
 
   submit(){
@@ -34,11 +34,4 @@ signUp(){
     this.router.navigate(["/recuperar"])
   }
     
-}
-export function onShare(args: observable.EventData) {
-    console.log("Share action item tapped.");
-}
-
-export function onDelete(args: observable.EventData) {
-    console.log("Delete action item tapped.");
 }

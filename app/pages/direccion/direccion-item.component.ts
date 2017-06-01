@@ -1,6 +1,10 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { Page } from "ui/page";
+import { ModalDialogService} from 'nativescript-angular/directives/dialogs';
+import { action} from "ui/dialogs";
+
+
 @Component({
 selector:"direccion-list-item",
 template:`
@@ -12,7 +16,7 @@ template:`
   <Label text="adipiscing elit. Donec eget elit sapien. Quis" editable="false" class="data"></Label>
   <Label text="que impediet nec nisl nec scelerisque..." editable="false" class="data"></Label>
   <StackLayout orientation="horizontal" class="buttonsContainer">
-  <Label text="Eliminar" (tap)="eliminar()" class ="eliminar"></Label>
+  <Label text="Eliminar" (tap)="displayActionDialog()" class ="eliminar"></Label>
   <Label text="Editar" (tap)="editar()" class ="buttons"></Label>
   </StackLayout>
   </StackLayout>
@@ -51,7 +55,7 @@ styles: [`
 
 })
 export class DireccionItemComponent{
-constructor(private router : Router ,page:Page){
+constructor(private router : Router ,page:Page,private modal: ModalDialogService){
    }
 eliminar(){
   this.router.navigate(["/detalles-item"])
@@ -59,4 +63,18 @@ eliminar(){
 editar(){
 this.router.navigate(["/nueva-direccion"])
 }
+displayActionDialog() {
+        // >> action-dialog-code
+        let options = {
+            title: "",
+            message: "Confirme",
+            cancelButtonText: "Ok",
+            actions: ["Esta seguro que quiere borrar","esta direccion ?"]
+        };
+
+        action(options).then((result) => {
+            
+        });
+        // << action-dialog-code
+    }
 }

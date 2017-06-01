@@ -12,7 +12,7 @@ import { ListItemComponent} from "./pages/solicitudes-lista/list-item.component"
 import { FloatBtnComponent } from "./pages/terminos/float-btn.component";
 import { AppComponent } from "./app.component";
 import { routes, navigatableComponents } from "./app.routing";
-
+import { ItemService} from "./pages/solicitudes-lista/direccion.service";
 @NgModule({
   imports: [
   NativeScriptModule,
@@ -27,6 +27,9 @@ import { routes, navigatableComponents } from "./app.routing";
   FloatBtn3Component,LISTVIEW_DIRECTIVES,
   SIDEDRAWER_DIRECTIVES,
   DireccionItemComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+   providers: [
+        ItemService
+    ],
 })
 export class AppModule {}
