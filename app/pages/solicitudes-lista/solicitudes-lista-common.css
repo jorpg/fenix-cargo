@@ -18,14 +18,29 @@ ActionBar{
     background-color: #e3f2fd;
   }
   .float-container{
-margin-left:40; 
+/*margin-left:60; */
 margin-top: 86%;
+padding: 0 60;
 }
 .sv{
 width: 100%;
 height: 100%;
 margin-left: 10;
 align-self: center;
+}
+.list-group{
+width: 100%;
+height: 100%;
+}
+.item{
+  margin: 0;
+}
+title{
+  font-family: 'Material-Design-Iconic-Font';
+    font-size: 35;
+    width: 40;
+    color: #ffffff;
+    z-index: 999;
 }
 
   

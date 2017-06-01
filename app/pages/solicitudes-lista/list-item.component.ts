@@ -4,8 +4,8 @@ import { Page } from "ui/page";
 @Component({
 selector:"list-item",
 template:`
-  <StackLayout orientation="horizontal" (tap)="detalles()" class="container">
-  <Image src="res://fenix_logo" stretch="none" horizontalAlignment="center"></Image>
+  <StackLayout orientation="horizontal" (tap)="detalles()" >
+  <StackLayout class="container"></StackLayout>
   <StackLayout orientation="horizontal">
   <StackLayout orientation="vertical" class="details">
   <Label text="Estatus:" editable="false"></Label>
@@ -25,9 +25,15 @@ template:`
 `,
 styles: [` 
     .container {
-       margin: 10;
-       background-color:#ffffff
+    background-image: url("res://paquetes");
+    background-repeat: no-repeat;     
+    margin: 0;
+    background-color:#ffffff;
+    width:120;
+    height:100;
 }
+
+
 .details{
    margin-top:10;
    margin-right:20;

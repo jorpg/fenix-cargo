@@ -13,6 +13,7 @@ import { FloatBtnComponent } from "./pages/terminos/float-btn.component";
 import { AppComponent } from "./app.component";
 import { routes, navigatableComponents } from "./app.routing";
 import { ItemService} from "./pages/solicitudes-lista/direccion.service";
+import { DireccionItemService} from "./pages/direccion/direccion.service";
 @NgModule({
   imports: [
   NativeScriptModule,
@@ -29,7 +30,7 @@ import { ItemService} from "./pages/solicitudes-lista/direccion.service";
   DireccionItemComponent],
   bootstrap: [AppComponent],
    providers: [
-        ItemService
+        ItemService,DireccionItemService
     ],
 })
 export class AppModule {}

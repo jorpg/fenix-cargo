@@ -1,16 +1,16 @@
 <ActionBar title="Fenix">
     <NavigationButton icon="res://ic_menu"></NavigationButton>
 </ActionBar>
-<AbsoluteLayout>
-<StackLayout class="page">
+<StackLayout class="page" style="padding: 10;">
     <ListView [items]="items" class="list-group">
-        <ng-template let-item="item">
+        <ng-template let-item="item" class="item">
             <list-item></list-item>
         </ng-template>
     </ListView>
 </StackLayout>
+<AbsoluteLayout>
 <StackLayout class="float-container">
 <float-btn2></float-btn2>
 </StackLayout>
-</AbsoluteLayout> 
+</AbsoluteLayout>
 

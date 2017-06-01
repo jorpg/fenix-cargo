@@ -14,9 +14,6 @@ ActionBar{
     margin-top:25%;
      
   }
-  ScrollView{
-    background-color: #e3f2fd;
-  }
   .float-container{
 margin-left:40; 
 margin-top: 86%;
@@ -24,8 +21,42 @@ margin-top: 86%;
 .sv{
 width: 100%;
 height: 100%;
-margin-left: 10;
+margin-left: 0;
 align-self: center;
+background-color: #BBDEFB;
 }
-
+.sideStackLayout {
+    background-color: #1976D2;
+    color: #FFFFFF;
+    margin-top: 20%;
+    margin-left:15%;
+    margin-right: 0;
+}
+ 
+.sideTitleStackLayout {
+    padding: 16;
+    font-weight: bold;
+    background-color: #333333;
+    margin-top: 0;
+    margin-left:0;
+    margin-right: 0;
+}
+ 
+.sideLabel {
+    padding: 0;
+    font-family: 'Material-Design-Iconic-Font';
+    color: #FFFFFF;
+    font-size: 20;
+    margin-bottom: 15
+}
+.listItemStackLayout {
+    padding: 16;
+    background-color: #FFFFFF;
+}
+.sideStackLayout2{
+  margin-top:290;
+  font-family: 'Material-Design-Iconic-Font';
+  color: #FFFFFF;
+  font-size: 20;
+}
   
