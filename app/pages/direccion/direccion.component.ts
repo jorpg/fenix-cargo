@@ -6,7 +6,8 @@ import { View } from 'ui/core/view';
 import * as Utils from "utils/utils";
 import * as FrameModule from "ui/frame";
 import * as Toast from 'nativescript-toast';
-
+import { DireccionItemComponent} from "./direccion-item.component";
+import { ModalDialogService} from 'nativescript-angular/directives/dialogs';
 @Component({
     selector: "holder",
     templateUrl: "./pages/direccion/direccion.html",
@@ -14,10 +15,18 @@ import * as Toast from 'nativescript-toast';
 })
 export class DireccionComponent implements OnInit {
 private drawer:SideDrawerType
-
+public  items: Array<DireccionItemComponent>;
+private counter: number;
+private modal:ModalDialogService;
 @ViewChild(RadSideDrawerComponent)
 public drawerComponent: RadSideDrawerComponent;
      constructor(private router : Router){
+         this.items = [];
+         this.counter = 0;
+        for (var i = 0; i < 20; i++) {
+            this.items.push(new DireccionItemComponent(this.router,this.modal));
+            this.counter = i;
+        }
           
  }
 public ngOnInit(){

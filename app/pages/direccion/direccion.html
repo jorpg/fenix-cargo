@@ -15,22 +15,17 @@
         </ScrollView>
     </StackLayout>
     <StackLayout tkMainContent class="mainContent">
-       <AbsoluteLayout>
-<ScrollView class="sv"> 
-<StackLayout>
-<direccion-list-item></direccion-list-item>
-<direccion-list-item></direccion-list-item>
-<direccion-list-item></direccion-list-item>
-<direccion-list-item></direccion-list-item>
-<direccion-list-item></direccion-list-item>
-<direccion-list-item></direccion-list-item> 
+      <StackLayout class="page" style="padding: 10;">
+    <ListView [items]="items" class="list-group">
+        <ng-template let-item="item" class="item">
+            <direccion-list-item></direccion-list-item>
+        </ng-template>
+    </ListView>
 </StackLayout>
-</ScrollView>
 <StackLayout class="float-container">
 <float-btn3></float-btn3>
 </StackLayout>
-</AbsoluteLayout> 
-</StackLayout>
+ </StackLayout>
 </RadSideDrawer>
 
 

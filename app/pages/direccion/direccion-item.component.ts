@@ -55,7 +55,8 @@ styles: [`
 
 })
 export class DireccionItemComponent{
-constructor(private router : Router ,page:Page,private modal: ModalDialogService){
+  
+constructor(private router : Router ,private modal: ModalDialogService){
    }
 eliminar(){
   this.router.navigate(["/detalles-item"])
