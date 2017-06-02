@@ -7,6 +7,7 @@ import { RadSideDrawerComponent,SideDrawerType} from "nativescript-telerik-ui/si
 import { View } from 'ui/core/view';
 import * as Utils from "utils/utils";
 import * as FrameModule from "ui/frame";
+import * as Toast from 'nativescript-toast';
 
 @Component({
     selector: "holder",
@@ -44,6 +45,10 @@ detallesItem(){
     }
     public perfil (){
      this.router.navigate(["/perfil"]);
+    }
+    public onMenuTapped() {
+        Toast.makeText("usted se encuentra en la vista seleccionada").show();
+        
     }
     
 }

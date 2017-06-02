@@ -33,5 +33,22 @@ registrarse(){
         });
         // << action-dialog-code
     }
+    back(){
+        this.router.navigate(["/solicitudes-lista"])
+    }
+    displayActionDialog2() {
+        // >> action-dialog-code
+        let options = {
+            title: "",
+            message: "confirmacion",
+            cancelButtonText: "Si",
+            actions: ["Estas seguro que los datos","suminstrados son correctos?"]
+        };
+
+        action(options).then((result) => {
+            console.log(result);
+        });
+        // << action-dialog-code
+    }
 
 }

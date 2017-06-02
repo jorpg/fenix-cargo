@@ -74,5 +74,9 @@ title{
   color: #FFFFFF;
   font-size: 20;
 }
+AbsoluteLayout{
+  width: 100%;
+height: 100%;
+}
 
   

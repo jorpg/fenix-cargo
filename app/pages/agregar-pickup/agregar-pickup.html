@@ -1,5 +1,5 @@
 <ActionBar title="Pickup Nueva">
-    <NavigationButton icon="res://ic_navigate_before" effectiveMarginRight=1 class="navButton"></NavigationButton>
+    <NavigationButton icon="res://ic_navigate_before" effectiveMarginRight=1 class="navButton" (tap)="back()"></NavigationButton>
 </ActionBar>
 <ScrollView orientation="vertical">
 <StackLayout>
@@ -16,7 +16,7 @@
 </StackLayout>  
   <TextField hint="Peso*" autocorrect="false" textAlignment="center"></TextField>
   <TextField hint="Direccion*" secure="true" autocorrect="false" autocapilatizationType="none" (tap)="displayActionDialog()"></TextField>
-<Button text="Guardar" (tap)="registrarse()"></Button>
+<Button text="Guardar" (tap)="displayActionDialog2()"></Button>
 </StackLayout>
 </ScrollView>
 

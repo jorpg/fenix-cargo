@@ -12,7 +12,7 @@ export class DetallesItemComponent {
     
   }
 
-guardar(){
-    this.router.navigate(["/solicitudes-holder"])
+back(){
+    this.router.navigate(["/solicitudes-lista"])
 }
 }

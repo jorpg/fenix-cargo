@@ -32,8 +32,8 @@ guardar(){
         this.drawer.showDrawer();
     }
 
-     public onMenuTapped(value: any) {
-        Toast.makeText(value + " menu item selected").show();
+     public onMenuTapped() {
+        Toast.makeText("usted se encuentra en la vista seleccionada").show();
         
     }
 

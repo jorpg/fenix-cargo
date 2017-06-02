@@ -32,9 +32,16 @@ public show(){
         this.drawer.showDrawer();
     }
 public home(){
-        this.router.navigate(["/solicitudes-lista"])
+        this.router.navigate(["/solicitudes-lista"]);
     }
 public direccion(){
-        this.router.navigate(["/direccion"])
+        this.router.navigate(["/direccion"]);
+    }
+public perfil(){
+    this.router.navigate(["/perfil"]);
+}    
+    public onMenuTapped() {
+        Toast.makeText("usted se encuentra en la vista seleccionada").show();
+        
     }
 }
