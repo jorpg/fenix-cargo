@@ -54,7 +54,7 @@ styles: [`
 
 })
 export class ListItemComponent{
-constructor(private router : Router ,page:Page){
+constructor(private router : Router){
    }
 detalles(){
   this.router.navigate(["/detalles-item"])

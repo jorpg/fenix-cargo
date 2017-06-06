@@ -1,13 +1,13 @@
 import { Component,OnInit,ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
-import { ItemService } from "./direccion.service";
-import {Item}from "./item";
 import { ListViewEventData,RadListView} from "nativescript-telerik-ui/listview";
 import { RadSideDrawerComponent,SideDrawerType} from "nativescript-telerik-ui/sidedrawer/angular";
 import { View } from 'ui/core/view';
 import * as Utils from "utils/utils";
 import * as FrameModule from "ui/frame";
 import * as Toast from 'nativescript-toast';
+import { ListItemComponent} from "./list-item.component";
+import { ModalDialogService} from 'nativescript-angular/directives/dialogs';
 
 @Component({
     selector: "holder",
@@ -15,12 +15,19 @@ import * as Toast from 'nativescript-toast';
     styleUrls: ["pages/solicitudes-lista/solicitudes-lista-common.css","pages/solicitudes-lista/solicitudes-lista.css"]
 })
 export class SolicitudesListaComponent implements OnInit {
-     items: Item[];
-     private drawer:SideDrawerType
+    public items:Array<ListItemComponent>;
+    private counter: number;
+    private modal:ModalDialogService;
+    private drawer:SideDrawerType
 @ViewChild(RadSideDrawerComponent)
 public drawerComponent: RadSideDrawerComponent;
-     constructor(private router : Router,private itemService: ItemService){
-    this.items = this.itemService.getItems();
+constructor(private router : Router){
+   this.items=[];
+   this.counter=0;
+   for (var i = 0; i < 20; i++) {
+            this.items.push(new ListItemComponent(this.router));
+            this.counter = i;
+        }
     
  }
 
@@ -30,7 +37,7 @@ detallesItem(){
 }
  ngOnInit(): void {
         this.drawer=this.drawerComponent.sideDrawer;
-        this.items = this.itemService.getItems();
+       
     }
     public show(){
         this.drawer.showDrawer();
